@@ -1,9 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("hello World Drone Go")
+	fmt.Println(HelloWorld())
+}
+
+// HelloWorld is a function that returns a string containing "hello world".
+func HelloWorld() string {
+	return "hello world"
 }

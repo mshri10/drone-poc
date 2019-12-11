@@ -1,3 +1,3 @@
-# drone-go-git-test
+# drone-with-go [![Build Status](http://beta.drone.io/api/badges/drone-demos/drone-with-go/status.svg)](http://beta.drone.io/drone-demos/drone-with-go)
 
-[![Build Status](https://cloud.drone.io/api/badges/cyantarek/drone-go-git-test/status.svg)](https://cloud.drone.io/cyantarek/drone-go-git-test)
+An example of how to test Go code with Drone.
