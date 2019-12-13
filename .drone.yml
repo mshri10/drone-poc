@@ -1,14 +1,22 @@
---- 
-pipeline: 
-  build: 
-    commands: 
-      - "go build"
-    image: "golang:latest"
-  test: 
-    commands: 
-      - "go vet"
-      - "go test -v -cover"
-    image: "golang:latest"
-workspace: 
-  base: /go
-  path: src/github.com/drone-demos/drone-with-go
+kind: pipeline
+type: docker
+name: greeting
+
+steps:
+- name: en
+  image: alpine
+  commands:
+  - echo hello
+  - echo world
+
+- name: es
+  image: alpine
+  commands:
+  - echo Drone
+  - echo Sample Project
+
+- name: fr
+  image: alpine
+  commands:
+  - os_version=`uname`
+  - echo "os_version is = $os_version"

@@ -1,0 +1,14 @@
+--- 
+pipeline: 
+  build: 
+    commands: 
+      - "go build"
+    image: "golang:latest"
+  test: 
+    commands: 
+      - "go vet"
+      - "go test -v -cover"
+    image: "golang:latest"
+workspace: 
+  base: /go
+  path: src/github.com/drone-demos/drone-with-go
