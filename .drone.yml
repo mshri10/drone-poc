@@ -27,5 +27,4 @@ steps:
   - apt-get update-y
   - apt-get install apache2 curl -y
   - service apache2 start
-  - IP_ADD=`/sbin/ifconfig eth0 | grep 'inet' | cut -d: -f2 | awk '{print $2}'`
-  - curl $IP_ADD
+  - curl localhost
