@@ -24,7 +24,7 @@ steps:
 - name: Apache2
   image: ubuntu
   commands:
-  - apt-get update-y
+  - apt-get update -y
   - apt-get install apache2 curl -y
   - service apache2 start
   - curl localhost
